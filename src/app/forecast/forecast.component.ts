@@ -10,7 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 export class ForecastComponent implements OnInit {
   zipCode!: string;
   forCastDataForZip: any;
-  filteredForeCastList = [];
+  
   constructor(
     private activatedroute: ActivatedRoute,
     private weatherService: WeatherService

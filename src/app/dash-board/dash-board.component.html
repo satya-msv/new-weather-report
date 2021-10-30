@@ -5,14 +5,14 @@
     <h2>Enter a zipcode:</h2>
     <input class="form-control" placeholder="Zipcode" type="text" [(ngModel)]="zipCode" id="addLocation">
     <br>
-    <button class="btn btn-primary" id="addLocationBtn" (click)="getCurrentWeatheryZipCode(zipCode)">
+    <button class="btn btn-primary" id="addLocationBtn" (click)="getCurrentWeatherByZipCode(zipCode)">
       Add location
     </button>
   </div>
   <div *ngFor="let item of currentWeatherData; let i=index">
     <div class="well flex">
       <div>
-        <h3>{{item.name}} ({{item.zipcode}})</h3>
+        <h3>{{item.name}} {{item.zipcode}}</h3>
         <h4>Current conditions: {{item.weather[0].main}}</h4>
         <h4>Temperatures today:</h4>
         <p>

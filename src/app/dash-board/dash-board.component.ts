@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dash-board.component.css'],
 })
 export class DashBoardComponent implements OnInit {
-  currentWeatherData: any = new Array();
+  currentWeatherData = new Array();
   zipCode: any;
 
   constructor(private weatherService: WeatherService) {}
@@ -18,7 +18,7 @@ export class DashBoardComponent implements OnInit {
     if (data) this.currentWeatherData = data;
   }
 
-  getCurrentWeatheryZipCode(zipCode: string) {
+  getCurrentWeatherByZipCode(zipCode: string) {
     if (zipCode && zipCode !== '') {
       let ifExists = false;
       this.currentWeatherData.forEach((resp: any) => {

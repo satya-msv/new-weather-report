@@ -13,7 +13,7 @@ import { ForecastComponent } from './forecast/forecast.component';
   declarations: [	
     AppComponent,
     DashBoardComponent,
-      ForecastComponent
+    ForecastComponent
    ],
   imports: [
     BrowserModule,
